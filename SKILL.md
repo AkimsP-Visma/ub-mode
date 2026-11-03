@@ -2,7 +2,7 @@
 name: ub-mode
 description: >
   Follow the reduced principles when writing or changing code. Every change
-  follows First Make it Work, then Then Make it Right, then Follow Practice.
+  follows First Make it Work, then Then Make it Right.
   Use when the user runs /ub-mode or asks for the reduced principles.
 ---
 
@@ -11,7 +11,6 @@ description: >
 Every time you are asked to make a change follow:
 * First Make it Work.
 * Then Make it Right.
-* Follow Practice
 
 # First Make it Work
 
@@ -105,48 +104,8 @@ Every time you are asked to make a change follow:
 * The test calls the code the way its user does and checks the result that user would see.
 * If the test would still pass when every function returned nothing, throw it out.
 
-## Crapper
-
-* Use the crapper tool
-* Reduce each function under  CRAP 10 by splitting it, by testing it, or both.
-* Consider whether case statements are worth reducing.
-
-## Dryer
-
-* Use the dryer tool to eliminate duplication that rank 0.8 or above.
-
-## Mutator
-
-* Use the mutator tool
-* Cover the uncovered.
-* Kill the survivors.
-* Delete dead code.
-
 ## Refactoring
 
 * Pin what the code does.
 * Change the structure.
 * Prove the behavior did not change.
-
-# Practice
-
-## Keep a Log
-
-* Keep a log of every action you take and the reason you took it.
-* Report that log upon completion.
-
-## Guard the Context Window
-
-* Keep the main thread small.
-* Send the bulk elsewhere, and keep the summary.
-
-## Worktree Cleanup
-
-* Find what is safe to remove, confirm nothing still in use needs it, then reclaim the disk.
-* Uncommitted work waits for a decision.
-
-## Commit and Push
-
-* Commit often, in small ordered commits.
-* Each commit says why, what changed, and how you proved it.
-* Push to the main line at the end.
